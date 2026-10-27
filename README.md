@@ -39,7 +39,7 @@ The final datasets are also archived on Zenodo: https://zenodo.org/records/17494
 
 ## Methods
 
-- **Framing:** each nominee gets a predicted probability of winning, and these are ranked within each ceremony year. The highest-ranked nominee is the predicted winner ("top pick accuracy"). A true multinomial model would have left only around 64 rows per dataset (one per year), which is too few to train on.
+- **Framing:** each nominee gets a predicted probability of winning, and these are ranked within each ceremony year. The highest-ranked nominee is the predicted winner ("top pick accuracy"). A true multinomial model would have left only around 65 rows per dataset (one per year), which is too few to train on.
 - **Train/test split:** `GroupShuffleSplit` grouped by Oscar year, so nominees from the same ceremony never appear in both training and test sets, while years are still shuffled to avoid bias from trends over time.
 - **Feature analysis:** features were removed one at a time to test their contribution. Rating features (IMDb, Rotten Tomatoes) were also tested for removal, because they're mostly collected after the ceremony and so wouldn't be available for genuine pre-ceremony prediction.
 - **Models compared:** Logistic Regression, Support Vector Machines and Random Forest.
@@ -79,7 +79,7 @@ Main packages: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `requ
 
 ## Limitations
 
-- The datasets are small (64 ceremonies), which limits model complexity and makes results sensitive to the train/test split. This is especially true for female acting, which showed the highest variance in cross-validation.
+- The datasets are small (65 ceremonies), which limits model complexity and makes results sensitive to the train/test split. This is especially true for female acting, which showed the highest variance in cross-validation.
 - The binary classification approach produces per-nominee probabilities that don't sum to 1 within a year. It ranks nominees well but isn't a calibrated probability distribution.
 - Some features come from community-maintained sources (TMDb, Wikidata), so occasional inaccuracies are possible. These were mitigated through spot-checking and manual correction.
 
