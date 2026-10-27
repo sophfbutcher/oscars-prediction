@@ -1,6 +1,6 @@
 # A Machine Learning Approach to Predicting the Oscars
 
-Code and data for **"A Machine Learning Approach to Predicting the Oscars"** (Sophie Butcher and Jad Abbass, Kingston University), presented at IEEE MPCON 2026. [DOI: 10.1109/MPCON69668.2026.11508236; [click here to find it on IEEE](https://ieeexplore.ieee.org/document/11508236)]
+Code and data for **"A Machine Learning Approach to Predicting the Oscars"** (Sophie Butcher and Jad Abbass, Kingston University), presented at IEEE MPCON 2026. [DOI: 10.1109/MPCON69668.2026.11508236; https://ieeexplore.ieee.org/document/11508236]
 
 ## Overview
 
