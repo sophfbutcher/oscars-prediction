@@ -2,6 +2,8 @@
 
 Code and data for **"A Machine Learning Approach to Predicting the Oscars"** (Sophie Butcher and Jad Abbass, Kingston University), presented at IEEE MPCON 2026. [DOI: 10.1109/MPCON69668.2026.11508236; https://ieeexplore.ieee.org/document/11508236]
 
+🎬 **Live app:** https://oscars-prediction.streamlit.app
+
 ## Overview
 
 Can machine learning predict who wins at the Oscars, aka. the biggest awards ceremony in Hollywood? 
